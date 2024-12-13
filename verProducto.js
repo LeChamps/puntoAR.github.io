@@ -1,4 +1,4 @@
-// window.location.href = './myUserArtesano.html';
+
 
 const firstButton = document.getElementById("firstButton")
 
