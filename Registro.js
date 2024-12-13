@@ -1,5 +1,5 @@
 // REGISTRO
-
+window.location.href = '../html/myUserArtesano.html'
 // FULL NAME FACE
 
 const Nombre = document.getElementById("fullName")

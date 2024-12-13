@@ -1,4 +1,4 @@
-
+window.location.href = '../html/myUserArtesano.html'
 
 const firstButton = document.getElementById("firstButton")
 
