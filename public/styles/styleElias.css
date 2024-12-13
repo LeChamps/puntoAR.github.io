@@ -1,0 +1,578 @@
+/*RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ede8db;
+}
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    height: 159px;
+    background-color: #ede8db;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.30);
+    position: relative;
+}
+
+.nav-link-container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    position: absolute;
+    left: 1250px;
+}
+
+.nav-link-container a {
+    text-decoration: none;
+    color: #152740;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.campanita-container {
+    border-radius: 50%;
+    background-color: #e73d3e;
+    border: none;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.campanita-container img {
+    width: 35%;
+    height: 48%;
+}
+
+
+.perfil-container {
+    border-radius: 50%;
+    background-color: #e73d3e;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-container:active{
+    background-color: #F3B411;
+}
+.imgs-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/*informacion main*/
+main {
+    background-color: #ede8db;
+    justify-content: center;
+    justify-self: center;
+}
+
+.bread-crumbs-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 50px;
+    margin-top: 85px;
+    align-items: start;
+}
+
+.bread-crumbs-text {
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: bold;
+    text-decoration: none;
+    color: #152740;
+}
+
+.bread-crumbs-product {
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: normal;
+    text-decoration: none;
+    color: #152740;
+}
+
+.bread-crumbs-arrow {
+    width: 24px;
+    height: 24px;
+}
+
+.info-perfil {
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    color: #152740;
+}
+
+.info-perfil-container {
+    display: flex;
+    width: 1100px;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 32px; 
+}
+
+.promedio-puntuacion-text {
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 500;
+    width: 431px;
+    color: #152740;
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+.stars-container {
+    display: flex;
+    width: 182px;
+    gap: 5px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.star-img, .star-NoMark-img {
+    width: 182px;
+    height: 36.4px;
+}
+
+ /* Descripcion artesano*/
+.artesan-container {
+    width: 1100px;
+    height: 429px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.artesan-descrip-container {
+    width: 410px;
+    height: 135px;
+}
+
+.artesan-h2 {
+    color: #152740;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.artesan-ctg { 
+    font-family: Inter;
+    font-size: 16px;
+    color: #152740;
+    font-weight: 600;
+}
+
+.artesan-descripted{
+    font-family: Inter;
+    font-size: 16px;
+    color: #152740;
+    font-weight: bold;
+}
+
+.artesan-p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    color: #152740;
+}
+
+.icons-artesan{
+    display: flex; 
+    width: 400px;
+    height: 38px;
+    gap: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Inter;
+    align-items: center; 
+}
+.icons-artesan img {
+    display: flex;
+    height: 38px;
+    width: 38px;
+    align-items: center;
+}
+
+.item-img img{
+    margin: 60px 50px 50px 0px;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    border-radius: 10px;
+}
+
+/*Medios de pago*/
+.met-pago-p {
+    display: flex;
+    color: #152740;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 76.4px;
+    margin-bottom: 42px;
+}
+
+.pay-met-container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 1100px;
+    height: 148px;
+    margin-bottom: 75px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-transf {
+    width: 50.14px;
+    height: 50.14px;
+}
+
+.icon-acuerdoComp {
+    width: 61.46px;
+    height: 48.02px;
+}
+
+.icon-text {
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    color: #152740;
+    text-align: center;
+}
+
+.rectangle-container {
+    position: absolute;
+    top: 0px; 
+    right: 0px; 
+    width: 268px;
+    height: 147px;
+    background-color: #487F86;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+}
+
+.icon-pig {
+    width: 103px;
+    height: 90.25px;
+}
+
+.icon-container:nth-child(1) { /* Icono de Transferencias (hijo 1) */
+    margin-right: 150px; 
+    margin-left: 80px;
+}
+
+/* Apartado dee "Más puntuación"*/
+.rated-text {
+    display: flex;
+    color: #152740;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 76.4px;
+    margin-bottom: 42px;
+}
+
+.new-container {
+    width: 1102px;
+    height: 1361px;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    border-radius: 10px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    
+}
+
+.product-item {
+    position: relative;
+    width: 352px;
+    height: 437px;
+    background-color: #E9DEC0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.product-item img {
+    width: 350px;
+    height: 253px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.calificacion-container {
+    position: absolute; 
+    right: 5px; 
+    z-index: 2; 
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 107px;
+    height: 22.2px;
+}
+
+
+
+.calificacion-container img {
+    width: 106px; 
+    height: 21.2px;
+    object-fit: contain; /
+}
+
+.product-info {
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.product-header {
+    display: flex; /* Activa el modo flexbox */
+    justify-content: space-between; /* Espacia los elementos */
+    align-items: center; /* Alinea verticalmente al centro */
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+
+}
+.product-info h3 {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 20px;
+    color: #152740;
+    
+}
+
+.product-info .price {
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 24px;
+    color: #152740;
+   
+}
+
+.product-info .province {
+    font-family: Inter;
+    font-style: italic;
+    font-size: 14px;
+    color: #152740;
+}
+
+.product-info .description {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    color: #152740;
+    margin: 10px 0;
+}
+
+.view-product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+}
+
+
+.view-product-btn {
+    width: 225px;
+    height: 41px;
+    background-color: #E73D3E;
+    border: none;
+    color: white;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+
+}
+
+.view-product-btn:hover {
+    height: 49px;
+    width: 233px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.page-number {
+    display: flex;
+    text-decoration: none;
+    font-family: Inter;
+    font-weight: bold;
+    width: 35px;
+    height: 37px;
+    font-size: 18px;
+    color: #152740;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.page-number.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #929DAD; /* Color gris */
+    color: #152740;
+    
+}
+
+/* Estilo para el Footer */
+.footer {
+    background-color: #152740;  
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    height: 176px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 176px;
+    margin: 0 auto;
+    
+}
+
+.footer-logo img {
+    width: 121px; 
+    height: 58.57;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-links ul li {
+    font-size: 14px;
+}
+
+.footer-links ul li a {
+    color: #ede8db;
+    text-decoration: none;
+    
+}
+
+/* Contenedor para redes sociales */
+.footer-social {
+    height: 57px;
+    text-align: center;
+}
+
+.social-text p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #ede8db  ;
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    width: 24.87px;
+    height: 24.87px;
+    object-fit: contain;
+    
+}
+
+.footer-social .social-icons img[alt="Instagram"] {
+    width: 34.87px;
+    height: 34.87px;
+    object-fit: contain; /* Para evitar distorsión */
+}
+
+.footer-social .social-icons img[alt="Facebook"] {
+    width: 34.87px;
+    height: 34.87px;
+    object-fit: contain; /* Para evitar distorsión */
+}
+
+.footer-social .social-icons img[alt="Youtube"] {
+    width: 27.87px;
+    height: 27.87px;
+    object-fit: contain; /* Para evitar distorsión */
+}
+
+/* Estilo para el nuevo contenedor de footer */
+.footer-bottom-container {
+    background-color: #ede8db;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    color: #152740;
+}
+
+/* Estilo para el texto dentro del footer-bottom-container */
+.footer-bottom-container p {
+    margin: 0;
+}
