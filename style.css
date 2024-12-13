@@ -913,3 +913,78 @@ footer {
     color: #152740;
     cursor: pointer;
 }
+
+/*  Popup de notificaciones  */
+.popup {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    width: 750px;
+    height: 800px;
+    overflow-y: scroll; /* Permite desplazamiento vertical */
+    background-color: #E9DEC0;
+    border: none;
+    border-radius: 10px;
+    scrollbar-width: none;
+}
+
+.popup-header {
+    background-color: #E9DEC0;
+    padding: 10px;
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: x-large;
+    margin: 30px 90px 40px 35px;
+} 
+
+.popup-content {
+    padding: 10px;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    float: inline-end;
+}
+
+/*  Contenido popup de notificaciones  */
+.popup-sales-log {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin: 0 130px 20px 30px;
+    border: none;
+}
+
+.popup-sales-date {
+    font-family: "Inter";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.popup-sales-description {
+    font-size: 13.5px;
+    font-family: "Inter";
+    font-weight: 500;
+}
+
+.popup-client-sales-img {
+    border-radius: 50%;
+    min-height: fit-content;
+    border: 3px solid #F3B411;
+    margin: 20px 30px 20px 15px;
+}
+
+.popup-article {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
