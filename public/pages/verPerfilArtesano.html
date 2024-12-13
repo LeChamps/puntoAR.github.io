@@ -24,7 +24,7 @@
             <a href="#">Soporte</a>
         </section>
         <section class="imgs-container">
-            <button class="campanita-container">
+            <button class="campanita-container" onclick="showPopup()">
                 <img src="../../assets/icons/campanita.png" alt="campanita">
             </button>
             <div class="perfil-container">
@@ -371,6 +371,23 @@
 
     
     
-    <script></script>
+    <script>
+        /*  codigo para cambiar de resumen ventas a otra pestaña/opcion
+
+        document.getElementById('showClients').addEventListener('click', () => { document.getElementById('clientsList').style.display = 'block'; document.getElementById('providersList').style.display = 'none';
+        });
+
+        document.getElementById('showProviders').addEventListener('click', () => { document.getElementById('clientsList').style.display = 'none'; document.getElementById('providersList').style.display = 'block';
+        });
+        */
+
+        function showPopup() {
+           document.getElementById('miPopup').style.display = 'block';
+        }
+        function closePopup() {
+           document.getElementById('miPopup').style.display = 'none';
+        }
+
+    </script>
 </body>
 </html>
