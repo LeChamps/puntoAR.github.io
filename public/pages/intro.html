@@ -20,7 +20,7 @@
 
 
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
             <li class="logo">
                 <a href="../../index.html"><img style="height: 70px; width: 145px;"
@@ -40,6 +40,7 @@
         </nav>
     </header>
 
+    <!--  Popup  -->
     <div class="popup" id="miPopup">
         <div class="popup-header"> 
             <button class="close-btn" onclick="closePopup()"><img src="../../assets/icons/close.png" alt=""></button>
@@ -48,11 +49,10 @@
         <div class="popup-content">
             <!-- Contenido del popup -->
              <div class="popup-sales-log">
-                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <img style="height: 60px;" src="../../assets/imgs/sales_5.jpg" alt="" class="popup-client-sales-img">
                 <article class="popup-article">
                     <p class="popup-sales-date">13/12/2024</p>
-                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
-                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    <p class="popup-sales-description"><strong><u>Marcelo Santachita,</u></strong> Calificó con 5 estrellas tu producto "Espejo macramé 30cm".
                     </p>
                 </article>
             </div>
@@ -61,52 +61,51 @@
                 <article class="popup-article">
                     <p class="popup-sales-date">13/12/2024</p>
                     <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
-                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                        Sitio de mesa. <strong><u>Ver compra</u></strong>
                     </p>
                 </article>
             </div>
             <div class="popup-sales-log">
-                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <img style="height: 60px;" src="../../assets/imgs/sales_2.png" alt="" class="popup-client-sales-img">
                 <article class="popup-article">
-                    <p class="popup-sales-date">13/12/2024</p>
-                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
-                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    <p class="popup-sales-date">10/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Juliana Berta,</u></strong> Compró uno de tus productos:<br>
+                        Camino de mesa 1.50mts. <strong><u>Ver compra</u></strong>
                     </p>
                 </article>
             </div>
             <div class="popup-sales-log">
-                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <img style="height: 60px;" src="../../assets/imgs/sales_6.png" alt="" class="popup-client-sales-img">
                 <article class="popup-article">
-                    <p class="popup-sales-date">13/12/2024</p>
-                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
-                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    <p class="popup-sales-date">08/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Elias Zepeda,</u></strong> Calificó con 5 estrellas tu producto "Camino de mesa navideño".
                     </p>
                 </article>
             </div>
             <div class="popup-sales-log">
-                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <img style="height: 60px;" src="../../assets/imgs/sales_3.jpg" alt="" class="popup-client-sales-img">
                 <article class="popup-article">
-                    <p class="popup-sales-date">13/12/2024</p>
-                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
-                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    <p class="popup-sales-date">07/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Agustín Torres,</u></strong> Compró uno de tus productos:<br>
+                        Telar de macramé colores surtidos. <strong><u>Ver compra</u></strong>
                     </p>
                 </article>
             </div>
             <div class="popup-sales-log">
-                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <img style="height: 60px;" src="../../assets/imgs/sales_4.png" alt="" class="popup-client-sales-img">
                 <article class="popup-article">
-                    <p class="popup-sales-date">13/12/2024</p>
-                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
-                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    <p class="popup-sales-date">05/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Jorge Noriega,</u></strong> Compró uno de tus productos:<br>
+                        Almohadón mini 30x10 cm. <strong><u>Ver compra</u></strong>
                     </p>
                 </article>
             </div>
-             <!-- Agrega más contenido aquí -->
+             
             </div>
         </div>
 
 
-    <main>
+    <main class="main">
         <h3>Home</h3>
         <h3>Mi perfil</h3>
         <h4>Información de perfil</h4>
@@ -122,6 +121,7 @@
         <h4>Resumen de ventas</h4>
 
         
+        <!--  Resumen de ventas  -->
         <dl>
             <dt class="dt-title">Hoy</dt>
             <div class="sales-log">
@@ -208,13 +208,14 @@
         </dl>
 
 
-    <footer>
+    <footer class="footer">
 
     </footer>
 
     <!-- Para futuras referencias -->
     <script>
-        /*
+        /*  codigo para cambiar de resumen ventas a otra pestaña/opcion
+
         document.getElementById('showClients').addEventListener('click', () => { document.getElementById('clientsList').style.display = 'block'; document.getElementById('providersList').style.display = 'none';
         });
 
@@ -228,7 +229,6 @@
         function closePopup() {
            document.getElementById('miPopup').style.display = 'none';
         }
-
 
     </script>
 </body>
