@@ -1,5 +1,5 @@
 // INICIO DE SESIÓM
-
+window.location.href = '../html/myUserArtesano.html'
 // Faces
 
 const cara1 = document.getElementById("cara1")
