@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../public/styles/notificaciones.css">
+    <!--FONTS-->
+    <!--Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!--Cormorant-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a style="height: 90px;" href="#"><img style="width: 145px; height: 90px;" src="../assets/icons/puntoArLogo.png"
+                alt="puntoAr-Logo"></a>
+        <section class="nav-link-container">
+            <a href="#">Sobre Nosotros</a>
+            <a href="#">Soporte</a>
+        </section>
+        <section class="imgs-container">
+            <div class="campanita-container" onclick="showPopup()">
+                <img src="../assets/icons/campanita.png" alt="campanita">
+            </div>
+            <div class="perfil-container">
+                <img style="width: 75px; height: 75px; border-radius: 50%;" src="../assets/imgs/Zulma.png" alt="">
+            </div>
+        </section>
+    </header>
+
+    <!--  Popup  -->
+    <div class="popup" id="miPopup">
+        <div class="popup-header">
+            <button class="close-btn" onclick="closePopup()"><img src="../../assets/icons/close.png" alt=""></button>
+            / Notificaciones
+        </div>
+        <div class="popup-content">
+            <!-- Contenido del popup -->
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_5.jpg" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">13/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Marcelo Santachita,</u></strong> Calificó con 5
+                        estrellas tu producto "Espejo macramé 30cm".
+                    </p>
+                </article>
+            </div>
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">13/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus
+                        productos:<br>
+                        Sitio de mesa. <strong><u>Ver compra</u></strong>
+                    </p>
+                </article>
+            </div>
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_2.png" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">10/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Juliana Berta,</u></strong> Compró uno de tus
+                        productos:<br>
+                        Camino de mesa 1.50mts. <strong><u>Ver compra</u></strong>
+                    </p>
+                </article>
+            </div>
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_6.png" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">08/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Elias Zepeda,</u></strong> Calificó con 5 estrellas tu
+                        producto "Camino de mesa navideño".
+                    </p>
+                </article>
+            </div>
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_3.jpg" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">07/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Agustín Torres,</u></strong> Compró uno de tus
+                        productos:<br>
+                        Telar de macramé colores surtidos. <strong><u>Ver compra</u></strong>
+                    </p>
+                </article>
+            </div>
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_4.png" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">05/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Jorge Noriega,</u></strong> Compró uno de tus
+                        productos:<br>
+                        Almohadón mini 30x10 cm. <strong><u>Ver compra</u></strong>
+                    </p>
+                </article>
+            </div>
+
+        </div>
+    </div>
+
+
+    <main>
+        <section class="bread-crumbs-container">
+            <a class="bread-crumbs-home" href="#">Home</a>
+            <img class="bread-crumbs-arrow" src="../assets/icons/leftArrow.svg" alt="left arrow">
+            <a class="bread-crumbs-text" href="./myUserArtesano.html">Mi Perfil</a>
+        </section>
+        <p class="info-perfil">Información de Perfil</p>
+        <span class="personal-perfil">Perfil personal <button class="personal-perfil-button"><img
+                    style="width: 15px; height: 15px;" src="../assets/icons/question.svg" alt=""></button></span>
+        <section class="Zulma-container">
+            <article class="description-container">
+                <div class="container-zulma-prov">
+                    <h2 class="zulma-h2">Zulma Giosa - 42 años</h2>
+                    <span class="zulma-prov">Provincia de Catamarca</span>
+                </div>
+                <div class="zulma-descrip-container">
+                    <p class="zulma-p">Soy docente jubilada, artesana y compradora de artesanías, siempre busco que mis
+                        regalos vengan de manos Argentinas, que trabajen con amor, para hacer objetos únicos. Me encanta
+                        hacer diseños en macramé, la pintura, el decoupagge. Mis mejores tardes son de música, mates y
+                        cositas para hacer, vender o regalar a mis seres queridos.</p>
+                </div>
+            </article>
+            <article class="edit-container">
+                <div style="display: flex; align-items: center; cursor: pointer;"><img
+                        style="width: 23px; height: 23px;" src="../assets/icons/pencil.png" alt=""><span
+                        class="edit-text">Editar perfil Personal</span></div>
+                <img style="width: 189px; height: 189px; border-radius: 50%;" src="../assets/imgs/Zulma.png" alt="">
+                <div style="display: flex; align-items: center; cursor: pointer;"><img
+                        style="width: 23px; height: 23px;" src="../assets/icons/pencil.png" alt=""><span
+                        class="edit-text">Editar foto</span></div>
+            </article>
+        </section>
+        <section class="underline-container">
+            <div class="underline-style-box"><span class="underline-text">Mi tienda</span></div>
+            <div class="underline-style-box underline-style-box-inactiva"><span
+                    class="underline-text underline-inactivo">Resumen de ventas</span></div>
+        </section>
+        <span class="perfil-comercial-text">Perfil comercial <button class="perfil-comercial-button"><img
+                    style="width: 15px; height: 15px;" src="../assets/icons/question.svg" alt=""></button></span>
+        <section class="nudos-container">
+            <article class="flex-nudos-container">
+                <div style="margin-bottom: 20px;">
+                    <h2 class="nudos-h2">“Tejiendo Nudos”</h2>
+                    <span class="nudos-span">Artesanías textiles</span>
+                </div>
+                <div class="nudos-p-container">
+                    <p class="nudos-p"><span class="nudos-span">Descripción: </span>Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit, sed diam nonummy nibh Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit, sed diam nonummy nibhLorem ipsum dolor sit amet, conse ctetuer adipiscing elit,
+                        d diam nonummy nibhLorem ipsum dolor sit amet, consect etuer adipiscing elit, Lorem ipsum dolor
+                        sit amet,</p>
+                </div>
+                <div class="icons-container">
+                    <img style="width: 40px; height: 43px;" src="../assets/icons/facebook.png" alt="">
+                    <img style="width: 38px; height: 38px;" src="../assets/icons/ig.png" alt="">
+                    <span class="envios-span">Hago envíos a todo el país</span>
+                </div>
+            </article>
+            <article>
+                <div class="stars-container">
+                    <span class="stars-span">Promedio de puntuación</span>
+                    <img class="stars-img" src="../assets/imgs/stars.png" alt="">
+                </div>
+                <div>
+                    <img style="width: 550px; height: 300px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;"
+                        src="../assets/imgs/perfilTienda.png" alt="">
+                    <div class="edit-foto" style="display: flex; align-items: center; cursor: pointer;"><img
+                            style="width: 23px; height: 23px;" src="../assets/icons/pencil-white.png" alt=""><a
+                            class="stars-a stars-a-white" href="#">Editar foto</a></div>
+                </div>
+                <div class="edit-perfil-tienda" style="display: flex; align-items: center; cursor: pointer;"><img
+                        style="width: 23px; height: 23px;" src="../assets/icons/pencil.png" alt=""><a class="stars-a"
+                        href="#">Editar perfil de la tienda</a></div>
+            </article>
+        </section>
+        <h2 class="pagos-h2">Medios de pagos seleccionados</h2>
+        <div style="display: flex; align-items: center; cursor: pointer; margin-left: 970px;"><img
+                style="width: 23px; height: 23px;" src="../assets/icons/gray-pencil.png" alt=""><a
+                class="editar-pagos-a" href="#">Editar medios de pago</a></div>
+        <section class="pagos-container">
+            <article class="medios-pago-container">
+                <img class="img-medios" src="../assets/imgs/transfer.png" alt="">
+                <span class="span-pago-medios" style="text-align: center;">Transferencias <br>bancarias</span>
+            </article>
+            <article class="medios-pago-container">
+                <img class="img-medios" src="../assets/imgs/credit-debit.png" alt="">
+                <span class="span-pago-medios" style="text-align: center;">Tarjeta de <br>crédito y débito</span>
+            </article>
+            <article class="medios-pago-container">
+                <img class="img-medios" src="../assets/imgs/acuerdo.png" alt="">
+                <span class="span-pago-medios">Acuerdo con <br>el vendedor</span>
+            </article>
+            <article class="ultimo-medio-pago">
+                <img class="img-medios-last" src="../assets/imgs/pig.png" alt="">
+            </article>
+        </section>
+        <h2 class="prod-publi-h2">Productos Publicados</h2>
+        <section class="grid-container">
+            <article class="first-card"><button class="first-card-button">+</button></article>
+            <article class="cards-container">
+                <img class="img-prod" src="../assets/imgs/prod-imgs/img1.png" alt="">
+                <div class="pencil-star-container">
+                    <button class="pencil-button-prods"><img class="pencil-prods" src="../assets/icons/pencil.png"
+                            alt=""></button>
+                    <img class="prod-stars" src="../assets/imgs/prod-stars.png" alt="">
+                </div>
+                <div class="bottom-section-container">
+                    <div class="name-precio-container">
+                        <span class="prod-title">Espejo 50/30</span>
+                        <span class="prod-price">$38000</span>
+                    </div>
+                    <span class="ubi-span">San Pedro, Buenos Aires</span>
+                    <p class="p-prod">Diámetro exterior 50 cm, hilo en papel craft. Descripción: Estructura metálica...
+                    </p>
+                    <button id="firstButton" class="ver-button">Ver producto</button>
+                </div>
+                <!--IMG 1 POP UP-->
+                <div id="div-class" class="container-ver-prod-hidden">
+                    <div class="flex-visu-container" style="margin-left: 120px; margin-right: 20px;">
+                        <span class="visu-prod">/ Visualizar producto</span>
+                        <button id="universal-x" class="x-button"><img src="../assets/icons/X.png" alt=""></button>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <section class="first-popup-section-container">
+                            <article style="margin-left: 25px;">
+                                <h1 class="title-pop-up">Espejo 50/30</h1>
+                                <span class="mini-descrip-pop-up">Diámetro exterior 50 cm, hilo en papel craft</span>
+                            </article>
+                            <article
+                                style="margin-bottom: 50px; width: 322px; height: 279px; display: flex; flex-direction: column; justify-content: space-around; margin-left: 25px;">
+                                <span class="descrip-pop-up"><span
+                                        style="font-family: Inter; font-weight: bold; font-size: 16px; line-height: 27px; color: #152740;">Descripción:
+                                    </span>Estructura metálica, espejo de 3 mm de espesor, hilo craft color a elección.
+                                    Se realizan diseños personalizados, variedad en tamaños, colores y patrones de
+                                    diseño.</span>
+                                <li class="li-descrip">Realizado 100% a mano.</li>
+                                <li class="li-descrip">Envios a todo el país por Correo.</li>
+                            </article>
+                            <span class="price-span">$38.000</span>
+                        </section>
+                        <section class="img-right-container">
+                            <img class="right-img" src="../assets/imgs/right-img.png" alt="">
+                            <button class="size-img-container"><img class="size-img" src="../assets/icons/img-size.png"
+                                    alt=""></button>
+                            <button class="next-img-container"><img class="next-img"
+                                    src="../assets/icons/right-arrow.png" alt=""></button>
+                        </section>
+                        <section class="penultima-section">
+                            <article class="flex-container-inputs">
+                                <div class="first-label-input-container">
+                                    <label class="first-label">Cantidad</label>
+                                    <input placeholder="0" class="first-input" type="number">
+                                </div>
+                                <input class="second-input" type="color">
+                            </article>
+                            <article class="last-imgs-container">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                            </article>
+                        </section>
+                    </div>
+                    <section class="buttons-container-popup">
+                        <button class="first-button-popup">Editar producto</button>
+                        <button class="second-button-popup">Eliminar producto</button>
+                    </section>
+                </div>
+            </article>
+            <article class="cards-container">
+                <img class="img-prod" src="../assets/imgs/prod-imgs/img2.png" alt="">
+                <div class="pencil-star-container">
+                    <button class="pencil-button-prods"><img class="pencil-prods" src="../assets/icons/pencil.png"
+                            alt=""></button>
+                    <img class="prod-stars" src="../assets/imgs/prod-stars.png" alt="">
+                </div>
+                <div class="bottom-section-container">
+                    <div class="name-precio-container">
+                        <span class="prod-title">Porta aros</span>
+                        <span class="prod-price">$8500</span>
+                    </div>
+                    <span class="ubi-span">San Pedro, Buenos Aires</span>
+                    <p class="p-prod">Medida 25x15, tiradores de madera, tejido de macramé rústico color marrón...</p>
+                    <button id="secondButton" class="ver-button">Ver producto</button>
+                </div>
+                <!--IMG 2 POP UP-->
+                <div id="div-class2" class="container-ver-prod-hidden">
+                    <div class="flex-visu-container" style="margin-left: 120px; margin-right: 20px;">
+                        <span class="visu-prod">/ Visualizar producto</span>
+                        <button id="universal-x2" class="x-button"><img src="../assets/icons/X.png" alt=""></button>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <section class="first-popup-section-container">
+                            <article style="margin-left: 25px;">
+                                <h1 class="title-pop-up">Porta aros</h1>
+                                <span class="mini-descrip-pop-up">Medida 25x15, tiradores de madera, tejido de macramé
+                                    rústico color marrón</span>
+                            </article>
+                            <article
+                                style="margin-bottom: 50px; width: 322px; height: 279px; display: flex; flex-direction: column; justify-content: space-around; margin-left: 25px;">
+                                <span class="descrip-pop-up"><span
+                                        style="font-family: Inter; font-weight: bold; font-size: 16px; line-height: 27px; color: #152740;">Descripción:
+                                    </span>Medida 25x15, tiradores de madera, tejido de macramé rústico color
+                                    marrón</span>
+                                <li class="li-descrip">Realizado 100% a mano.</li>
+                                <li class="li-descrip">Envios a todo el país por Correo.</li>
+                            </article>
+                            <span class="price-span">$8.500</span>
+                        </section>
+                        <section class="img-right-container">
+                            <img class="right-img" src="../assets/imgs/prod-imgs/img2.png" alt="">
+                            <button class="size-img-container"><img class="size-img" src="../assets/icons/img-size.png"
+                                    alt=""></button>
+                            <button class="next-img-container"><img class="next-img"
+                                    src="../assets/icons/right-arrow.png" alt=""></button>
+                        </section>
+                        <section class="penultima-section">
+                            <article class="flex-container-inputs">
+                                <div class="first-label-input-container">
+                                    <label class="first-label">Cantidad</label>
+                                    <input placeholder="0" class="first-input" type="number">
+                                </div>
+                                <input class="second-input" type="color">
+                            </article>
+                            <article class="last-imgs-container">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                            </article>
+                        </section>
+                    </div>
+                    <section class="buttons-container-popup">
+                        <button class="first-button-popup">Editar producto</button>
+                        <button class="second-button-popup">Eliminar producto</button>
+                    </section>
+                </div>
+            </article>
+            <article class="cards-container">
+                <img class="img-prod" src="../assets/imgs/prod-imgs/img3.webp" alt="">
+                <div class="pencil-star-container">
+                    <button class="pencil-button-prods"><img class="pencil-prods" src="../assets/icons/pencil.png"
+                            alt=""></button>
+                    <img class="prod-stars" src="../assets/imgs/prod-stars.png" alt="">
+                </div>
+                <div class="bottom-section-container">
+                    <div class="name-precio-container">
+                        <span class="prod-title">Tapiz XL</span>
+                        <span class="prod-price">$8700</span>
+                    </div>
+                    <span class="ubi-span">San Pedro, Buenos Aires</span>
+                    <p class="p-prod">Combinación de hilos naturales, ancho 65 cm, largo 1,20 mts. Trama única dis...
+                    </p>
+                    <button id="tercerButton" class="ver-button">Ver producto</button>
+                </div>
+                <div id="div-class3" class="container-ver-prod-hidden">
+                    <div class="flex-visu-container" style="margin-left: 120px; margin-right: 20px;">
+                        <span class="visu-prod">/ Visualizar producto</span>
+                        <button id="universal-x3" class="x-button"><img src="../assets/icons/X.png" alt=""></button>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <section class="first-popup-section-container">
+                            <article style="margin-left: 25px;">
+                                <h1 class="title-pop-up">Tapiz XL</h1>
+                                <span class="mini-descrip-pop-up">Combinación de hilos naturales, ancho 65 cm, largo
+                                    1,20 mts. Trama única</span>
+                            </article>
+                            <article
+                                style="margin-bottom: 50px; width: 322px; height: 279px; display: flex; flex-direction: column; justify-content: space-around; margin-left: 25px;">
+                                <span class="descrip-pop-up"><span
+                                        style="font-family: Inter; font-weight: bold; font-size: 16px; line-height: 27px; color: #152740;">Descripción:
+                                    </span>Combinación de hilos naturales, ancho 65 cm, largo 1,20 mts. Trama
+                                    única</span>
+                                <li class="li-descrip">Realizado 100% a mano.</li>
+                                <li class="li-descrip">Envios a todo el país por Correo.</li>
+                            </article>
+                            <span class="price-span">$8.700</span>
+                        </section>
+                        <section class="img-right-container">
+                            <img class="right-img" src="../assets/imgs/prod-imgs/img3.webp" alt="">
+                            <button class="size-img-container"><img class="size-img" src="../assets/icons/img-size.png"
+                                    alt=""></button>
+                            <button class="next-img-container"><img class="next-img"
+                                    src="../assets/icons/right-arrow.png" alt=""></button>
+                        </section>
+                        <section class="penultima-section">
+                            <article class="flex-container-inputs">
+                                <div class="first-label-input-container">
+                                    <label class="first-label">Cantidad</label>
+                                    <input placeholder="0" class="first-input" type="number">
+                                </div>
+                                <input class="second-input" type="color">
+                            </article>
+                            <article class="last-imgs-container">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                            </article>
+                        </section>
+                    </div>
+                    <section class="buttons-container-popup">
+                        <button class="first-button-popup">Editar producto</button>
+                        <button class="second-button-popup">Eliminar producto</button>
+                    </section>
+                </div>
+            </article>
+            <article class="cards-container">
+                <img class="img-prod" src="../assets/imgs/prod-imgs/img4.jpg" alt="">
+                <div class="pencil-star-container">
+                    <button class="pencil-button-prods"><img class="pencil-prods" src="../assets/icons/pencil.png"
+                            alt=""></button>
+                    <img class="prod-stars" src="../assets/imgs/prod-stars.png" alt="">
+                </div>
+                <div class="bottom-section-container">
+                    <div class="name-precio-container">
+                        <span class="prod-title">Tapiz Mediano</span>
+                        <span class="prod-price">$6300</span>
+                    </div>
+                    <span class="ubi-span">San Pedro, Buenos Aires</span>
+                    <p class="p-prod">Hilo teñido naturalmente con hierbas, punto en Q, ancho 20 cm aproximada...</p>
+                    <button id="cuartoButton" class="ver-button">Ver producto</button>
+                </div>
+                <div id="div-class4" class="container-ver-prod-hidden">
+                    <div class="flex-visu-container" style="margin-left: 120px; margin-right: 20px;">
+                        <span class="visu-prod">/ Visualizar producto</span>
+                        <button id="universal-x4" class="x-button"><img src="../assets/icons/X.png" alt=""></button>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <section class="first-popup-section-container">
+                            <article style="margin-left: 25px;">
+                                <h1 class="title-pop-up">Tapiz Mediano</h1>
+                                <span class="mini-descrip-pop-up">Hilo teñido naturalmente con hierbas, punto en Q,
+                                    ancho 20 cm aproximada</span>
+                            </article>
+                            <article
+                                style="margin-bottom: 50px; width: 322px; height: 279px; display: flex; flex-direction: column; justify-content: space-around; margin-left: 25px;">
+                                <span class="descrip-pop-up"><span
+                                        style="font-family: Inter; font-weight: bold; font-size: 16px; line-height: 27px; color: #152740;">Descripción:
+                                    </span>Hilo teñido naturalmente con hierbas, punto en Q, ancho 20 cm
+                                    aproximada</span>
+                                <li class="li-descrip">Realizado 100% a mano.</li>
+                                <li class="li-descrip">Envios a todo el país por Correo.</li>
+                            </article>
+                            <span class="price-span">$6.300</span>
+                        </section>
+                        <section class="img-right-container">
+                            <img class="right-img" src="../assets/imgs/prod-imgs/img4.jpg" alt="">
+                            <button class="size-img-container"><img class="size-img" src="../assets/icons/img-size.png"
+                                    alt=""></button>
+                            <button class="next-img-container"><img class="next-img"
+                                    src="../assets/icons/right-arrow.png" alt=""></button>
+                        </section>
+                        <section class="penultima-section">
+                            <article class="flex-container-inputs">
+                                <div class="first-label-input-container">
+                                    <label class="first-label">Cantidad</label>
+                                    <input placeholder="0" class="first-input" type="number">
+                                </div>
+                                <input class="second-input" type="color">
+                            </article>
+                            <article class="last-imgs-container">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                            </article>
+                        </section>
+                    </div>
+                    <section class="buttons-container-popup">
+                        <button class="first-button-popup">Editar producto</button>
+                        <button class="second-button-popup">Eliminar producto</button>
+                    </section>
+                </div>
+            </article>
+            <article class="cards-container">
+                <img class="img-prod" src="../assets/imgs/prod-imgs/img5.jpg" alt="">
+                <div class="pencil-star-container">
+                    <button class="pencil-button-prods"><img class="pencil-prods" src="../assets/icons/pencil.png"
+                            alt=""></button>
+                    <img class="prod-stars" src="../assets/imgs/prod-stars.png" alt="">
+                </div>
+                <div class="bottom-section-container">
+                    <div class="name-precio-container">
+                        <span class="prod-title">Camino de mesa</span>
+                        <span class="prod-price">$5500</span>
+                    </div>
+                    <span class="ubi-span">San Pedro, Buenos Aires</span>
+                    <p class="p-prod">Largo aproximado 1.80 cm, extremos tejidos en macramé diversos colores c...</p>
+                    <button id="quintoButton" class="ver-button">Ver producto</button>
+                </div>
+                <div id="div-class5" class="container-ver-prod-hidden">
+                    <div class="flex-visu-container" style="margin-left: 120px; margin-right: 20px;">
+                        <span class="visu-prod">/ Visualizar producto</span>
+                        <button id="universal-x5" class="x-button"><img src="../assets/icons/X.png" alt=""></button>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <section class="first-popup-section-container">
+                            <article style="margin-left: 25px;">
+                                <h1 class="title-pop-up">Camino de mesa</h1>
+                                <span class="mini-descrip-pop-up">Largo aproximado 1.80 cm, extremos tejidos en macramé
+                                    diversos colores</span>
+                            </article>
+                            <article
+                                style="margin-bottom: 50px; width: 322px; height: 279px; display: flex; flex-direction: column; justify-content: space-around; margin-left: 25px;">
+                                <span class="descrip-pop-up"><span
+                                        style="font-family: Inter; font-weight: bold; font-size: 16px; line-height: 27px; color: #152740;">Descripción:
+                                    </span>Largo aproximado 1.80 cm, extremos tejidos en macramé diversos colores</span>
+                                <li class="li-descrip">Realizado 100% a mano.</li>
+                                <li class="li-descrip">Envios a todo el país por Correo.</li>
+                            </article>
+                            <span class="price-span">$5.500</span>
+                        </section>
+                        <section class="img-right-container">
+                            <img class="right-img" src="../assets/imgs/prod-imgs/img5.jpg" alt="">
+                            <button class="size-img-container"><img class="size-img" src="../assets/icons/img-size.png"
+                                    alt=""></button>
+                            <button class="next-img-container"><img class="next-img"
+                                    src="../assets/icons/right-arrow.png" alt=""></button>
+                        </section>
+                        <section class="penultima-section">
+                            <article class="flex-container-inputs">
+                                <div class="first-label-input-container">
+                                    <label class="first-label">Cantidad</label>
+                                    <input placeholder="0" class="first-input" type="number">
+                                </div>
+                                <input class="second-input" type="color">
+                            </article>
+                            <article class="last-imgs-container">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                            </article>
+                        </section>
+                    </div>
+                    <section class="buttons-container-popup">
+                        <button class="first-button-popup">Editar producto</button>
+                        <button class="second-button-popup">Eliminar producto</button>
+                    </section>
+                </div>
+            </article>
+            <article class="cards-container">
+                <img class="img-prod" src="../assets/imgs/prod-imgs/img6.jpg" alt="">
+                <div class="pencil-star-container">
+                    <button class="pencil-button-prods"><img class="pencil-prods" src="../assets/icons/pencil.png"
+                            alt=""></button>
+                    <img class="prod-stars" src="../assets/imgs/prod-stars.png" alt="">
+                </div>
+                <div class="bottom-section-container">
+                    <div class="name-precio-container">
+                        <span class="prod-title">Adorno Floral</span>
+                        <span class="prod-price">$3500</span>
+                    </div>
+                    <span class="ubi-span">San Pedro, Buenos Aires</span>
+                    <p class="p-prod">Flor artesanal realizada en yute desflecado, hilos y cintas variadas par...</p>
+                    <button id="sextoButton" class="ver-button">Ver producto</button>
+                </div>
+                <div id="div-class6" class="container-ver-prod-hidden">
+                    <div class="flex-visu-container" style="margin-left: 120px; margin-right: 20px;">
+                        <span class="visu-prod">/ Visualizar producto</span>
+                        <button id="universal-x6" class="x-button"><img src="../assets/icons/X.png" alt=""></button>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <section class="first-popup-section-container">
+                            <article style="margin-left: 25px;">
+                                <h1 class="title-pop-up">Adorno Floral</h1>
+                                <span class="mini-descrip-pop-up">Flor artesanal realizada en yute desflecado, hilos y
+                                    cintas variadas</span>
+                            </article>
+                            <article
+                                style="margin-bottom: 50px; width: 322px; height: 279px; display: flex; flex-direction: column; justify-content: space-around; margin-left: 25px;">
+                                <span class="descrip-pop-up"><span
+                                        style="font-family: Inter; font-weight: bold; font-size: 16px; line-height: 27px; color: #152740;">Descripción:
+                                    </span>Flor artesanal realizada en yute desflecado, hilos y cintas variadas</span>
+                                <li class="li-descrip">Realizado 100% a mano.</li>
+                                <li class="li-descrip">Envios a todo el país por Correo.</li>
+                            </article>
+                            <span class="price-span">$3.500</span>
+                        </section>
+                        <section class="img-right-container">
+                            <img class="right-img" src="../assets/imgs/prod-imgs/img6.jpg" alt="">
+                            <button class="size-img-container"><img class="size-img" src="../assets/icons/img-size.png"
+                                    alt=""></button>
+                            <button class="next-img-container"><img class="next-img"
+                                    src="../assets/icons/right-arrow.png" alt=""></button>
+                        </section>
+                        <section class="penultima-section">
+                            <article class="flex-container-inputs">
+                                <div class="first-label-input-container">
+                                    <label class="first-label">Cantidad</label>
+                                    <input placeholder="0" class="first-input" type="number">
+                                </div>
+                                <input class="second-input" type="color">
+                            </article>
+                            <article class="last-imgs-container">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                            </article>
+                        </section>
+                    </div>
+                    <section class="buttons-container-popup">
+                        <button class="first-button-popup">Editar producto</button>
+                        <button class="second-button-popup">Eliminar producto</button>
+                    </section>
+                </div>
+            </article>
+            <article class="cards-container">
+                <img class="img-prod" src="../assets/imgs/prod-imgs/img7.jpg" alt="">
+                <div class="pencil-star-container">
+                    <button class="pencil-button-prods"><img class="pencil-prods" src="../assets/icons/pencil.png"
+                            alt=""></button>
+                    <img class="prod-stars" src="../assets/imgs/prod-stars.png" alt="">
+                </div>
+                <div class="bottom-section-container">
+                    <div class="name-precio-container">
+                        <span class="prod-title">Pantalla de luz</span>
+                        <span class="prod-price">$15000</span>
+                    </div>
+                    <span class="ubi-span">San Pedro, Buenos Aires</span>
+                    <p class="p-prod">Pantalla de luz base de hierro, material cinta de papel reforzada, colores
+                        vario...</p>
+                    <button id="septimoButton" class="ver-button">Ver producto</button>
+                </div>
+                <div id="div-class7" class="container-ver-prod-hidden">
+                    <div class="flex-visu-container" style="margin-left: 120px; margin-right: 20px;">
+                        <span class="visu-prod">/ Visualizar producto</span>
+                        <button id="universal-x7" class="x-button"><img src="../assets/icons/X.png" alt=""></button>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <section class="first-popup-section-container">
+                            <article style="margin-left: 25px;">
+                                <h1 class="title-pop-up">Pantalla de luz</h1>
+                                <span class="mini-descrip-pop-up">Pantalla de luz base de hierro, material cinta de
+                                    papel reforzada, colores varios</span>
+                            </article>
+                            <article
+                                style="margin-bottom: 50px; width: 322px; height: 279px; display: flex; flex-direction: column; justify-content: space-around; margin-left: 25px;">
+                                <span class="descrip-pop-up"><span
+                                        style="font-family: Inter; font-weight: bold; font-size: 16px; line-height: 27px; color: #152740;">Descripción:
+                                    </span>Pantalla de luz base de hierro, material cinta de papel reforzada, colores
+                                    varios</span>
+                                <li class="li-descrip">Realizado 100% a mano.</li>
+                                <li class="li-descrip">Envios a todo el país por Correo.</li>
+                            </article>
+                            <span class="price-span">$15.000</span>
+                        </section>
+                        <section class="img-right-container">
+                            <img class="right-img" src="../assets/imgs/prod-imgs/img7.jpg" alt="">
+                            <button class="size-img-container"><img class="size-img" src="../assets/icons/img-size.png"
+                                    alt=""></button>
+                            <button class="next-img-container"><img class="next-img"
+                                    src="../assets/icons/right-arrow.png" alt=""></button>
+                        </section>
+                        <section class="penultima-section">
+                            <article class="flex-container-inputs">
+                                <div class="first-label-input-container">
+                                    <label class="first-label">Cantidad</label>
+                                    <input placeholder="0" class="first-input" type="number">
+                                </div>
+                                <input class="second-input" type="color">
+                            </article>
+                            <article class="last-imgs-container">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                            </article>
+                        </section>
+                    </div>
+                    <section class="buttons-container-popup">
+                        <button class="first-button-popup">Editar producto</button>
+                        <button class="second-button-popup">Eliminar producto</button>
+                    </section>
+                </div>
+            </article>
+            <article class="cards-container">
+                <img class="img-prod" src="../assets/imgs/prod-imgs/img8.jpg" alt="">
+                <div class="pencil-star-container">
+                    <button class="pencil-button-prods"><img class="pencil-prods" src="../assets/icons/pencil.png"
+                            alt=""></button>
+                    <img class="prod-stars" src="../assets/imgs/prod-stars.png" alt="">
+                </div>
+                <div class="bottom-section-container">
+                    <div class="name-precio-container">
+                        <span class="prod-title">Tapiz circular</span>
+                        <span class="prod-price">$6500</span>
+                    </div>
+                    <span class="ubi-span">San Pedro, Buenos Aires</span>
+                    <p class="p-prod">Tapices circulares, colores variados, productos de diseño único, consultá p...</p>
+                    <button id="octavoButton" class="ver-button">Ver producto</button>
+                </div>
+                <div id="div-class8" class="container-ver-prod-hidden">
+                    <div class="flex-visu-container" style="margin-left: 120px; margin-right: 20px;">
+                        <span class="visu-prod">/ Visualizar producto</span>
+                        <button id="universal-x8" class="x-button"><img src="../assets/icons/X.png" alt=""></button>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <section class="first-popup-section-container">
+                            <article style="margin-left: 25px;">
+                                <h1 class="title-pop-up">Tapiz circular</h1>
+                                <span class="mini-descrip-pop-up">Tapices circulares, colores variados, productos de
+                                    diseño único</span>
+                            </article>
+                            <article
+                                style="margin-bottom: 50px; width: 322px; height: 279px; display: flex; flex-direction: column; justify-content: space-around; margin-left: 25px;">
+                                <span class="descrip-pop-up"><span
+                                        style="font-family: Inter; font-weight: bold; font-size: 16px; line-height: 27px; color: #152740;">Descripción:
+                                    </span>Tapices circulares, colores variados, productos de diseño único</span>
+                                <li class="li-descrip">Realizado 100% a mano.</li>
+                                <li class="li-descrip">Envios a todo el país por Correo.</li>
+                            </article>
+                            <span class="price-span">$6.500</span>
+                        </section>
+                        <section class="img-right-container">
+                            <img class="right-img" src="../assets/imgs/prod-imgs/img8.jpg" alt="">
+                            <button class="size-img-container"><img class="size-img" src="../assets/icons/img-size.png"
+                                    alt=""></button>
+                            <button class="next-img-container"><img class="next-img"
+                                    src="../assets/icons/right-arrow.png" alt=""></button>
+                        </section>
+                        <section class="penultima-section">
+                            <article class="flex-container-inputs">
+                                <div class="first-label-input-container">
+                                    <label class="first-label">Cantidad</label>
+                                    <input placeholder="0" class="first-input" type="number">
+                                </div>
+                                <input class="second-input" type="color">
+                            </article>
+                            <article class="last-imgs-container">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                                <img src="../assets/imgs/not-found.svg" alt="">
+                            </article>
+                        </section>
+                    </div>
+                    <section class="buttons-container-popup">
+                        <button class="first-button-popup">Editar producto</button>
+                        <button class="second-button-popup">Eliminar producto</button>
+                    </section>
+                </div>
+            </article>
+        </section>
+        <section class="flex-paginacion-container">
+            <button class="active-button">1</button>
+            <button class="buttons-paginacion">2</button>
+            <button class="buttons-paginacion">3</button>
+            <button class="button-points">...</button>
+        </section>
+    </main>
+    <footer style="width: 100%;">
+        <section class="first-section-container">
+            <img class="logo-img" src="../assets/icons/puntoArLogoFooter.png" alt="">
+            <article class="icons-span-container">
+                <span class="span-footer">Nuestro objetivo es crear comunidad, seguinos en</span>
+                <img class="footer-icons" src="../assets/imgs/footerIcons.png" alt="">
+            </article>
+            <article class="links-container">
+                <a class="footer-a" href="">Sobre nosotros</a>
+                <a class="footer-a" href="">Cómo sumarte</a>
+                <a class="footer-a" href="">Preguntas frecuentes</a>
+                <a class="footer-a" href="">Soporte</a>
+                <a class="footer-a" href="">Contacto</a>
+            </article>
+        </section>
+        <section class="second-section-container">
+            <p class="p-footer">puntoar.com.ar | Av. Córdoba 5635/7 piso 9º (C1414BBC) Buenos Aires, Argentina | +54 11
+                4703-0775 | Copyright 2000/2024 | CUIT 30-70712303-2 | Hecho el depósito Ley 11723 - Derechos
+                reservados.</p>
+        </section>
+    </footer>
+    <script src="../verProducto.js">
+        /*  codigo para cambiar de resumen ventas a otra pestaña/opcion
+
+        document.getElementById('showClients').addEventListener('click', () => { document.getElementById('clientsList').style.display = 'block'; document.getElementById('providersList').style.display = 'none';
+        });
+
+        document.getElementById('showProviders').addEventListener('click', () => { document.getElementById('clientsList').style.display = 'none'; document.getElementById('providersList').style.display = 'block';
+        });
+        */
+
+        function showPopup() {
+            document.getElementById('miPopup').style.display = 'block';
+        }
+        function closePopup() {
+            document.getElementById('miPopup').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
