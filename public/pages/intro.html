@@ -35,11 +35,75 @@
             <li class="nav-links">
                 <a href="#">Soporte</a>
             </li>
-            <button></button>
+            <button onclick="showPopup()">Notificaciones</button>
             <button></button>
         </nav>
     </header>
 
+    <div class="popup" id="miPopup">
+        <div class="popup-header"> 
+            <button class="close-btn" onclick="closePopup()"><img src="../../assets/icons/close.png" alt=""></button>
+            / Notificaciones
+        </div>
+        <div class="popup-content">
+            <!-- Contenido del popup -->
+             <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">13/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
+                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    </p>
+                </article>
+            </div>
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">13/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
+                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    </p>
+                </article>
+            </div>
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">13/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
+                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    </p>
+                </article>
+            </div>
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">13/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
+                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    </p>
+                </article>
+            </div>
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">13/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
+                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    </p>
+                </article>
+            </div>
+            <div class="popup-sales-log">
+                <img style="height: 60px;" src="../../assets/imgs/sales_1.jpg" alt="" class="popup-client-sales-img">
+                <article class="popup-article">
+                    <p class="popup-sales-date">13/12/2024</p>
+                    <p class="popup-sales-description"><strong><u>Vanina Lovera,</u></strong> Compró uno de tus productos:<br>
+                        Anillo de plata. <strong><u>Ver compra</u></strong>
+                    </p>
+                </article>
+            </div>
+             <!-- Agrega más contenido aquí -->
+            </div>
+        </div>
 
 
     <main>
@@ -148,14 +212,25 @@
 
     </footer>
 
-    <!-- Para futuras referencias
+    <!-- Para futuras referencias -->
     <script>
+        /*
         document.getElementById('showClients').addEventListener('click', () => { document.getElementById('clientsList').style.display = 'block'; document.getElementById('providersList').style.display = 'none';
         });
 
         document.getElementById('showProviders').addEventListener('click', () => { document.getElementById('clientsList').style.display = 'none'; document.getElementById('providersList').style.display = 'block';
         });
-    </script> -->
+        */
+
+        function showPopup() {
+           document.getElementById('miPopup').style.display = 'block';
+        }
+        function closePopup() {
+           document.getElementById('miPopup').style.display = 'none';
+        }
+
+
+    </script>
 </body>
 
 </html>
